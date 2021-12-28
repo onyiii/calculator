@@ -24,48 +24,45 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >
-      Coded by <a href="#">Onyinye Chukwuma</a>
-    </div>
     <div class="container m-5 p-5 calc-container">
-      <div class="text-white fw-bold mb-2" id="calc">calc</div>
+      <div class="text-white fw-bold mb-2" id="calc">calculator</div>
 
       <input
         type="text"
-        class="p-3 text-white mb-4"
+        class="p-3 text-white mb-4 input"
         id="input-number"
         placeholder="0"
       />
       <div class="all-buttons">
-        <button class="btn btn-light">7</button>
+        <button class="btn btn-light controls">7</button>
 
-        <button class="btn btn-light">8</button>
-        <button class="btn btn-light">9</button>
-        <button class="btn btn-light text-white" id="del">DEL</button>
-        <button class="btn btn-light">4</button>
-        <button class="btn btn-light">5</button>
-        <button class="btn btn-light">6</button>
-        <button class="btn btn-light">+</button>
-        <button class="btn btn-light">1</button>
-        <button class="btn btn-light">2</button>
-        <button class="btn btn-light">3</button>
-        <button class="btn btn-light">-</button>
-        <button class="btn btn-light">.</button>
-        <button class="btn btn-light">0</button>
-        <button class="btn btn-light">/</button>
-        <button class="btn btn-light">*</button>
-        <button class="btn btn-light text-white" id="reset">RESET</button>
-        <button class="btn btn-light text-white" id="equality-sign">=</button>
+        <button class="btn btn-light controls">8</button>
+        <button class="btn btn-light controls">9</button>
+        <button class="btn btn-light delete text-white" id="del">DEL</button>
+        <button class="btn btn-light controls">4</button>
+        <button class="btn btn-light controls">5</button>
+        <button class="btn btn-light controls">6</button>
+        <button class="btn btn-light operations">+</button>
+        <button class="btn btn-light controls">1</button>
+        <button class="btn btn-light controls">2</button>
+        <button class="btn btn-light controls">3</button>
+        <button class="btn btn-light operations">-</button>
+        <button class="btn btn-light controls">.</button>
+        <button class="btn btn-light controls">0</button>
+        <button class="btn btn-light operations">/</button>
+        <button class="btn btn-light operations">*</button>
+        <button class="btn btn-light reset text-white" id="reset">RESET</button>
+        <button class="btn btn-light equals text-white" id="equality-sign">
+          =
+        </button>
       </div>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha34-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>
