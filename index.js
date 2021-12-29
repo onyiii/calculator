@@ -3,6 +3,7 @@ const controls = document.querySelectorAll(".controls");
 const operations = document.querySelectorAll(".operations");
 const equals = document.querySelector(".equals");
 const reset = document.querySelector(".reset");
+const deleteLast = document.querySelector(".delete");
 
 let hiddenDisplay = "";
 let inputNumber = "";
@@ -55,4 +56,19 @@ function mathOperation() {
 equals.addEventListener("click", (e) => {
   if (!hiddenDisplay || !inputNumber) return;
   haveDot = false;
+  mathOperation();
+  clearVar();
+  inputNumber = result;
+  input.value = result;
+  hiddenDisplay = "";
+});
+reset.addEventListener("click", (e) => {
+  input.value = "0";
+  inputNumber = "";
+  hiddenDisplay = "";
+  result = "";
+});
+deleteLast.addEventListener("click", (e) => {
+  inputNumber = inputNumber.slice(0, -1);
+  input.value = inputNumber;
 });
