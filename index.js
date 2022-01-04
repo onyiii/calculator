@@ -92,6 +92,8 @@ window.addEventListener("keydown", (e) => {
     clickOperation(e.key);
   } else if (e.key === "Enter" || e.key === "=") {
     clickEqual();
+  } else if (e.key === "Backspace") {
+    clickDelete();
   }
 });
 function clickButton(key) {
@@ -110,4 +112,7 @@ function clickOperation(key) {
 }
 function clickEqual() {
   equals.click();
+}
+function clickDelete() {
+  deleteLast.click();
 }

@@ -5,9 +5,11 @@
 
 .calc-container {
   background-color: hsl(222, 26%, 31%);
-
+  position: absolute;
+  left: 30%;
   width: 25rem;
   border-radius: 2rem;
+  overflow: hidden;
 }
 .all-buttons {
   border-radius: 0.5rem;
@@ -18,7 +20,7 @@
 .all-buttons button {
   font-weight: bold;
   border: unset;
-  box-shadow: inset 6px 6px 13px hsl(222, 26%, 31%);
+  box-shadow: -10px -20px 13px hsl(222, 26%, 31%);
 }
 .all-buttons button:active {
   transform: translateY(0.5rem);
@@ -42,8 +44,7 @@
   border: none;
   text-align: end;
   font-size: 35px;
-  box-shadow: inset -6px -6px 13px hsl(226, 11%, 56%),
-    6px 6px 13px hsl(225, 61%, 11%);
+  box-shadow: 13px hsl(226, 11%, 56%);
 }
 #calc {
   grid-column-start: 1;
