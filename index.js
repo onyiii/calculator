@@ -64,6 +64,7 @@ equals.addEventListener("click", (e) => {
   inputNumber = result;
   input.value = result;
   hiddenDisplay = "";
+  inputNumber = "";
 });
 reset.addEventListener("click", (e) => {
   input.value = "0";
