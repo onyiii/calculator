@@ -10,7 +10,6 @@ let inputNumber = "";
 let haveDot = false;
 let result = null;
 let lastOperation = "";
-let negative = "-";
 
 controls.forEach((number) => {
   number.addEventListener("click", (e) => {
@@ -19,10 +18,8 @@ controls.forEach((number) => {
     } else if (e.target.textContent === "." && haveDot) {
       return;
     }
-    if (inputNumber === "" && e.target.textContent === "0") return;
-    else {
-      inputNumber += e.target.textContent;
-    }
+
+    inputNumber += e.target.textContent;
 
     input.value = inputNumber;
   });
